@@ -1,0 +1,386 @@
+<html> 
+   <head>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/> 
+     <title>Projeto Computação Gráfica</title> 
+     <script type='text/javascript' src='https://www.x3dom.org/download/x3dom.js'> </script> 
+     <link rel='stylesheet' type='text/css' href='https://www.x3dom.org/download/x3dom.css'></link> 
+   </head> 
+   <body> 
+	 <x3d width='1020px' height='900px'> 
+	   <scene>
+                     <!--Base Primeira casa-->
+            <transform translation=' -7 -6 -40' rotation='0 0 0 -0.785'>  
+               <shape >
+                  <Appearance>
+                     <ImageTexture url="https://images-americanas.b2w.io/produtos/01/00/img/1287810/2/1287810270_1GG.jpg"/>
+                  </Appearance>
+                  <Box size='3 4 3'>
+               </shape>
+               <!--Poligono para telhado-->
+            <transform translation='0 2 1.5' rotation='0 1 0 -0.004'>
+               <shape DEF='Poligono'> 
+               <appearance>
+                     <ImageTexture url="https://images-americanas.b2w.io/produtos/01/00/img/1287810/2/1287810270_1GG.jpg"/>
+               </appearance>
+               <IndexedFaceSet coordIndex='0 1 2 0 -1'>
+                     <Coordinate point='-1.5 0 0  1.5 0 0  0 3 0'></Coordinate>
+               </IndexedFaceSet>
+               </shape>
+            </transform>
+            <transform translation='0 2 -1.5' rotation='0 1 0 -0.004'>
+               <shape USE='Poligono'>
+            </transform>
+            <!--Telhado da primeira casa-->
+            <transform translation='-0.80 3.45 0' rotation='0 0 1 -0.490'>
+               <shape DEF='Telhado'>
+                  <Appearance>
+                     <Material diffuseColor='1 1 1'></Material>
+                  </Appearance>
+                  <Box size='0.1 3.5 4'>
+               </shape>
+            </transform>
+            <transform translation='0.80 3.45 0' rotation='0 0 1 0.490'>
+               <shape USE='Telhado'>
+            </transform>
+            <!--Chapa do telhado da primeira casa-->
+            <transform translation='-0.93 3.5 0' rotation='0 0 1 -0.490'>
+               <shape DEF='Chapa'>
+                  <Appearance>
+                  <Material diffuseColor='0 0 0'></Material>
+                  </Appearance>
+                  <Box size='0.15 3.75 4'>
+               </shape>
+            </transform>
+            <transform translation='0.93 3.5 0' rotation='0 0 1 0.490'>
+               <shape USE='Chapa'>
+            </transform>
+            <!--Porta casa menor-->
+            <transform translation='0 -0.50 0.55' rotation='0 0 0 0'>   
+               <shape >
+                  <Appearance>
+                     <Material diffuseColor='1 1 1 '></Material>
+                  </Appearance>
+                  <Box size='2 3 2'>
+               </shape>
+               </transform>
+               <transform translation='0 -0.5 1' rotation='0 0 0 0'>   
+                  <shape >
+                     <Appearance>
+                     <Material diffuseColor='1 1 1'></Material>
+                     </Appearance>
+                     <Box size='1.5 2.5 1.5'>
+                  </shape>
+                  </transform>
+                  <transform translation='2.8 -0.5 0.2' rotation='0 0 0 0'>   
+                     <shape >
+                        <Appearance>
+                        <Material diffuseColor='1 1 1'></Material>
+                        </Appearance>
+                        <Box size='1.5 2.5 1.5'>
+                     </shape>
+                     </transform>
+
+
+                            <!--Segunda casa-->
+                  <transform translation='1.5 0 -0.75' rotation='0 0 0 0'>
+                     <shape >
+                        <Appearance>
+                        <ImageTexture url="https://images-americanas.b2w.io/produtos/01/00/img/1287810/2/1287810270_1GG.jpg"/>
+                        </Appearance>
+                        <Box size='6 4 3'>
+                     </shape>
+                     <!--Poligono Segunda casa-->
+                     <transform translation='0 2 1.5' rotation='0 1 0 -0.004'>
+                        <shape DEF='Poligono_2'> 
+                        <appearance>
+                           <ImageTexture url="https://images-americanas.b2w.io/produtos/01/00/img/1287810/2/1287810270_1GG.jpg"/>
+                        </appearance>
+                        <IndexedFaceSet coordIndex='0 1 2 0 -1'>
+                           <Coordinate point='-3 0 0  3 0 0  0 4 0'></Coordinate>
+                        </IndexedFaceSet>
+                        </shape>
+                        </transform>
+                        <transform translation='0 2 -1.5' rotation='0 0 0 0'>
+                           <shape USE='Poligono_2'>
+                        </transform>
+                        <!--Telhado Casa maior-->
+                        <transform translation='-1.55 3.99 0' rotation='0 0 1 -0.650'>
+                        <shape DEF='Telhado_2'>
+                           <Appearance>
+                           <Material diffuseColor='1 1 1'></Material>
+                           </Appearance>
+                           <Box size='0.1 5 4'>
+                        </shape>
+                        </transform>
+                        <transform translation='1.55 3.99 0' rotation='0 0 1 0.650'>
+                           <shape USE='Telhado_2'>
+                        </transform>
+                        <!--Chapa telhado segunda casa -->
+                        <transform translation='1.70 4 0' rotation='0 0 1 0.650'>
+                        <shape DEF='Chapa_2'>
+                           <Appearance>
+                           <Material diffuseColor='0 0 0'></Material>
+                           </Appearance>
+                           <Box size='0.15 5.40 4'>
+                        </shape>
+                        </transform>
+                        <transform translation='-1.70 4 0' rotation='0 0 1 -0.650'>
+                           <shape USE='Chapa_2'>
+                        </transform>
+                        <!--Porta casa segunda casa-->
+                        <transform translation='1.25 -0.50 0.55' rotation='0 0 0 0'>
+                        <shape >
+                           <Appearance>
+                              <Material diffuseColor='1 1 1 '></Material>
+                           </Appearance>
+                           <Box size='2 3 2'>
+                        </shape>
+                        </transform>
+                  </transform>
+
+                         <!--Tercaira casa-->
+               <transform translation='5.5 0 -1.5' rotation='0 0 0 0'>
+                  <shape DEF='Ter_casa'>
+                     <Appearance>
+                        <ImageTexture url="https://images-americanas.b2w.io/produtos/01/00/img/1287810/2/1287810270_1GG.jpg"/>
+                     </Appearance>
+                     <Box size='3 4 3'>
+                  </shape>
+                  <transform translation='0 2.6 0' rotation='0 0 0 0'>
+                     <shape USE='Ter_casa'>
+                  </transform>
+                  <!--Poligono Terceirra casa-->
+                  <transform translation='0 4.5 1.5 ' rotation='0 0 0 0'>
+                     <shape DEF='Pol_ter_casa'> 
+                        <appearance>
+                           <ImageTexture url="https://images-americanas.b2w.io/produtos/01/00/img/1287810/2/1287810270_1GG.jpg"/>
+                        </appearance>
+                        <IndexedFaceSet coordIndex='0 1 2 0 -1'>
+                           <Coordinate point='-1.5 0 0  1.5 0 0  0 3 0'></Coordinate>
+                        </IndexedFaceSet>
+                        </shape>
+                     </transform>
+                     <transform translation='0 4.5 -1.5' rotation='0 1 0 -0.004'>
+                        <shape USE='Pol_ter_casa'>
+                  </transform>
+                  <!--Telhado Terceira casa-->
+                  <transform translation='-0.80 6 0' rotation='0 0 1 -0.490'>
+                     <shape DEF='Telha_ter_casa'>
+                        <Appearance>
+                        <Material diffuseColor='1 1 1'></Material>
+                        </Appearance>
+                        <Box size='0.1 3.5 4'>
+                     </shape>
+                     <transform translation='1.40 0.75 0' rotation='0 0 1 0.980'>
+                        <shape USE='Telha_ter_casa'>
+                     </transform>
+                  </transform>
+                  <!--Chapa terceira casa-->
+                  <transform translation='-0.93 6 0' rotation='0 0 1 -0.490'>
+                     <shape DEF='Chapa_terceira'>
+                        <Appearance>
+                        <Material diffuseColor='0 0 0'></Material>
+                        </Appearance>
+                        <Box size='0.15 3.75 4'>
+                     </shape>
+                  </transform>
+                  <transform translation='0.92 6 0' rotation='0 0 1 0.490'>
+                     <shape USE='Chapa_terceira'>
+                  </transform>
+
+               <!--Quarta Casa-->
+                  <transform translation='2 0 -0.75' rotation=''>
+                     <shape DEF='Quarta_casa'>
+                  <Appearance>
+                     <ImageTexture url="https://images-americanas.b2w.io/produtos/01/00/img/1287810/2/1287810270_1GG.jpg"/>
+                  </Appearance>
+                  <Box size='6 4 3'>
+               </shape>
+                  </transform>
+                  <transform translation='2 4 -0.75' rotation='0 0 0 0'>
+                     <shape USE='Quarta_casa'>
+                  </transform>
+                  <!--Poligono Quarta casa-->
+                  <transform translation='2 6 0.75'  rotation='0 0 0 0'>
+                     <shape DEF='Quart_casa'> 
+                        <appearance>
+                           <ImageTexture url="https://images-americanas.b2w.io/produtos/01/00/img/1287810/2/1287810270_1GG.jpg"/>
+                        </appearance>
+                        <IndexedFaceSet coordIndex='0 1 2 0 -1'>
+                           <Coordinate point='-3 0 0  3 0 0  0 4 0'></Coordinate>
+                        </IndexedFaceSet>
+                        </shape>
+                  </transform>
+                  <transform translation='2 6 -2.25' rotation=''>
+                     <shape USE='Quart_casa'>
+                  </transform>
+                  <!--Telhado Quarta casa-->
+                  <transform translation='0.5 7.85 -0.75' rotation='0 0 1 -0.650'>
+                     <shape DEF='Telhado_4'>
+                        <Appearance>
+                        <Material diffuseColor='1 1 1'></Material>
+                        </Appearance>
+                        <Box size='0.1 5 4'>
+                     </shape>
+                  <transform translation='2.50 1.85 0' rotation='0 0 1 1.294'>
+                     <shape USE='Telhado_4'>
+                  </transform>
+                  </transform>
+                  <!--Chapa quarta casa-->
+                  <transform translation='3.70 7.80 -0.75' rotation='0 0 1 0.650'>
+                     <shape DEF='Chapa_4'>
+                        <Appearance>
+                        <Material diffuseColor='0 0 0'></Material>
+                        </Appearance>
+                        <Box size='0.15 5.40 4'>
+                     </shape>
+                     <transform translation='-2.60 2 0' rotation='0 0 1 1.850'>
+                        <shape USE='Chapa_4'>
+                     </transform>
+                  </transform>
+                           <!--Quinta casa-->
+                  <transform translation='5.90 0 -2' rotation='0 0 0 0'>
+                     <shape DEF='Quinto_bloco'>
+                        <Appearance>
+                           <ImageTexture url="https://images-americanas.b2w.io/produtos/01/00/img/1287810/2/1287810270_1GG.jpg"/>
+                        </Appearance>
+                        <Box size='6 4 3'>
+                     </shape>
+                     <transform translation='0 3.70 0' rotation='0 0 0 0'>
+                        <shape USE='Quinto_bloco'>
+                     </transform>
+                     <!--Poligono Quinta casa-->
+                     <transform translation='1. 5.5 1.5' rotation=''>
+                        <shape DEF='Poligono_5'> 
+                           <appearance>
+                              <ImageTexture url="https://images-americanas.b2w.io/produtos/01/00/img/1287810/2/1287810270_1GG.jpg"/>
+                           </appearance>
+                           <IndexedFaceSet coordIndex='0 1 2 0 -1'>
+                              <Coordinate point='-2 0 0  2 0 0  0 3 0'></Coordinate>
+                           </IndexedFaceSet>
+                           </shape>
+                           <transform translation='0 0 -3' rotation='0 0 0 '>
+                              <shape USE='Poligono_5'>
+                           </transform>
+                           <!--Telhado Quinta Casa-->
+                           <transform translation='-1.1 1.40 -1.5' rotation='0 0 1 -0.600'>
+                              <shape DEF='Telhado_5'>
+                                 <Appearance>
+                                 <Material diffuseColor='1 1 1'></Material>
+                                 </Appearance>
+                                 <Box size='0.1 3.5 4'>
+                              </shape>
+                              <transform translation='1.55 1.27 0' rotation='0 0 1 1.200'>
+                                 <shape USE='Telhado_5'>
+                              </transform>
+                              <!--Chapa quinto telhado-->
+                              <transform translation='-0.18 0 0.25' rotation='0 0 0 0'>
+                                 <shape DEF='Chapa_5'>
+                                    <Appearance>
+                                    <Material diffuseColor='0 0 0'></Material>
+                                    </Appearance>
+                                    <Box size='0.1 3.75 4.5'>
+                                 </shape>
+                                 <transform translation='1.75 1.33 0' rotation='0 0 1 -1.915'>
+                                    <shape USE='Chapa_5'>
+                                 </transform>
+                              </transform>
+                           </transform>
+                     </transform>
+                  </transform>
+                  <!--Bloco Janela quinta casa-->
+                  <transform translation='6.75 3 -1.25' rotation=' 0 0 0'> 
+                     <shape >
+                        <Appearance>
+                           <ImageTexture url="https://images-americanas.b2w.io/produtos/01/00/img/1287810/2/1287810270_1GG.jpg"/>
+                        </Appearance>
+                        <Box size='2.5 3.5 2'>
+                     </shape>
+                  </transform>
+               <group def='janela'>
+                  <transform translation='0 3.5 0.85' rotation='0 0 0 0'>   
+                  <shape >
+                     <Appearance>
+                     <Material diffuseColor='1 1 1'></Material>
+                     </Appearance>
+                     <Box size='1.5 2.5 2'>
+                  </shape>
+                  </transform>
+                  <transform translation='-0.35 4.41 1.5' rotation='0 0 0 0'>   
+                     <shape DEF='BLOCO' >
+                        <Appearance>
+                        <Material diffuseColor='1 0 0'></Material>
+                        </Appearance>
+                        <Box size='0.65 0.5 0.8'>
+                     </shape>
+                  </transform>
+                  <transform translation='-0.35 3.82 1.5'	rotation='0 0 0 0'>
+                     <shape USE='BLOCO'>
+                  </transform>
+                  <transform translation='-0.35 3.22 1.5'	rotation='0 0 0 0'>
+                     <shape USE='BLOCO'>
+                  </transform>  
+                  <transform translation='-0.35 2.62 1.5'	rotation='0 0 0 0'>
+                     <shape USE='BLOCO'>
+                  </transform>
+                  <transform translation='0.35 3.82 1.5'	rotation='0 0 0 0'>
+                     <shape USE='BLOCO'>
+                  </transform>
+                  <transform translation='0.35 3.22 1.5'	rotation='0 0 0 0'>
+                     <shape USE='BLOCO'>
+                  </transform>  
+                  <transform translation='0.35 2.62 1.5'	rotation='0 0 0 0'>
+                     <shape USE='BLOCO'>
+                  </transform>
+                  <transform translation='0.35 4.41 1.5'	rotation='0 0 0 0'>
+                     <shape USE='BLOCO'>
+                  </transform>
+		    	</group>
+             <transform translation='7 -0.55 -2' rotation='0 0 0 0'>
+                <Shape USE='janela'>
+             </transform>
+             <transform translation='3 -0.55 -1' rotation='0 0 0 0'>
+               <Shape USE='janela'>
+            </transform>
+                  <!-- JANELAS MENORES -->
+          <group def='janelas_menores'>        
+			<transform translation='2 7 -0.10' rotation='0 0 0 0'>   
+            <shape>
+               <Appearance>
+               <Material diffuseColor='1 1 1'></Material>
+               </Appearance>
+               <Box size='1 1.75 2'>
+            </shape>
+               <transform translation='-0.2 0.5 0.65' rotation='0 0 0 0'>   
+                   <shape DEF='BLOCO_2'>
+                     <Appearance>
+                         <Material diffuseColor='1 0 0'></Material>
+                      </Appearance>
+                                 <Box size='0.4 0.4 0.8'>
+                   </shape>
+                   </transform>
+                   <transform translation='-0.2 0 0.65' rotation='0 0 0 0'>
+                     <shape USE='BLOCO_2'>
+                   </transform>
+                   <transform translation='0.25 -0.5 0.65' rotation='0 0 0 0'>
+                     <shape USE='BLOCO_2'>
+                   </transform>
+                   <transform translation='0.25 0 0.65' rotation='0 0 0 0'>
+                     <shape USE='BLOCO_2'>
+                   </transform>
+                   <transform translation='-0.2 -0.5 0.65' rotation='0 0 0 0'>
+                      <shape USE='BLOCO_2'>
+                   </transform>
+                   <transform translation='0.25 0.5 0.65' rotation='0 0 0 0'>
+                     <shape USE='BLOCO_2'>
+                   </transform>
+                  </transform>
+            </transform> 
+         </group>
+         <transform translation='0 -3.5 0' rotation='0 0 0 0'>
+            <shape USE='janelas_menores'>
+         </transform>
+	   </scene> 
+	</x3d> 
+   </body> 
+</html> 

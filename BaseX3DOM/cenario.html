@@ -1,0 +1,166 @@
+<html> 
+   <head>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/> 
+     <title>cenario</title> 
+     <script type='text/javascript' src='https://www.x3dom.org/download/x3dom.js'> </script> 
+     <link rel='stylesheet' type='text/css' href='https://www.x3dom.org/download/x3dom.css'></link> 
+   </head> 
+   <body> 
+	 <x3d width='1080px' height='900px'> 
+	   <scene> 
+           <!-- bloco que faz a base da casa -->
+            <transform translation='-2 -3 -2.5'>
+                <shape> 
+                <appearance>  
+                    <ImageTexture url="https://img.freepik.com/fotos-gratis/fundo-de-texturas-de-parede-de-tijolo_74190-4021.jpg?size=626&ext=jpg"/>
+                </appearance> 
+                <box size='4 4 5.5'/>   
+                </shape> 
+            </transform>
+        <!--Poligono frente-->
+        <transform translation='-2 -1 0.25'>
+            <shape> 
+              <appearance>
+                  <ImageTexture url="https://img.freepik.com/fotos-gratis/fundo-de-texturas-de-parede-de-tijolo_74190-4021.jpg?size=626&ext=jpg"/>
+              </appearance>
+              <IndexedFaceSet coordIndex='0 1 2 0 -1'>
+                  <Coordinate point='-2 0 0  2 0 0  0 3.5 0'></Coordinate>
+              </IndexedFaceSet>
+              </shape>
+           </transform>
+           <!--Poligono fundo-->
+           <transform translation='-2 -1 -4' >
+            <shape> 
+              <appearance>
+                  <ImageTexture url="https://img.freepik.com/fotos-gratis/fundo-de-texturas-de-parede-de-tijolo_74190-4021.jpg?size=626&ext=jpg"/>
+              </appearance>
+              <IndexedFaceSet coordIndex='0 1 2 0 -1'>
+                  <Coordinate point='-2 0 0  2 0 0  0 3.5 0'></Coordinate>
+              </IndexedFaceSet>
+              </shape>
+           </transform>
+           <!--telhado interno esquerdo-->
+           <transform translation="-3 0.75 -2.5" rotation='0 0 1 -0.523'>
+            <shape>
+                <appearance>  
+                    <material diffuseColor='1 1 1'/>
+                </appearance> 
+                <box size='0.1 4 6 '/>   
+            </shape>
+        </transform>
+        <!--telhado interno direito-->
+        <transform translation="-1 0.75 -2.5" rotation='0 0 1 0.523'>
+            <shape>
+                <appearance>  
+                    <material diffuseColor='1 1 1'/>
+                </appearance> 
+                <box size='0.1 4 6'/>   
+            </shape>
+        </transform>
+        <!--chapa que vai em cima telhado esquerdo-->
+		<transform translation="-3.1 0.75 -2.5" rotation='0 0 1 -0.523'>
+            <shape> 
+               <appearance>  
+                <ImageTexture url="https://image.freepik.com/fotos-gratis/feche-acima-do-grupo-de-telhado-de-telhas-cinza-textura-de-fundo-cinza_40260-95.jpg"/>
+               </appearance> 
+               <box size='0.1 4.25 6'/>   
+            </shape>
+           </transform>
+           <!--chapa que vai em cima telhado direito-->
+           <transform translation="-0.90 0.75 -2.5" rotation='0 0 1 0.523'>
+            <shape> 
+               <appearance>  
+                 <material diffuseColor='0 0 0'/>
+               </appearance> 
+               <box size='0.1 4.25 6'/>   
+            </shape>
+           </transform>
+        <!--Porta da casa lado esquerda-->
+        <transform translation='-2 -3.5 -0.74'>
+        <shape> 
+            <appearance>  
+              <material diffuseColor='1 1 1'/>
+            </appearance> 
+            <box size='2 3 2'>   
+         </shape>
+        </transform>
+        <!--Porta da casa lado esquerda-->
+        <transform translation='2 -3.5 -1.24'>
+            <shape> 
+                <appearance>  
+                  <material diffuseColor='1 1 1'/>
+                </appearance> 
+                <box size='2 3 2'>   
+             </shape>
+            </transform>
+        <!-- bloco que faz a base da segunda casa -->
+		<transform translation='0.25 -3 -3'>
+			<shape> 
+			<appearance>  
+				<ImageTexture url="https://img.freepik.com/fotos-gratis/fundo-de-texturas-de-parede-de-tijolo_74190-4021.jpg?size=626&ext=jpg"/>
+			</appearance> 
+			<box size='8 4 5.5'/>   
+			</shape> 
+		</transform>
+		<!--Poligono frente-->
+        <transform translation='0.25 -1 -0.25'>
+            <shape> 
+              <appearance>
+                  <ImageTexture url="https://img.freepik.com/fotos-gratis/fundo-de-texturas-de-parede-de-tijolo_74190-4021.jpg?size=626&ext=jpg"/>
+              </appearance>
+              <IndexedFaceSet coordIndex='0 1 2 0 -1'>
+                  <Coordinate point='-4 0 0  4 0 0  0 7 0'></Coordinate>
+              </IndexedFaceSet>
+              </shape>
+           </transform>
+		   <!--Poligono fundo-->
+           <transform translation='0.25 -1 -5.75' rotation='0 0  0 0'>
+            <shape> 
+              <appearance>
+                  <ImageTexture url="https://img.freepik.com/fotos-gratis/fundo-de-texturas-de-parede-de-tijolo_74190-4021.jpg?size=626&ext=jpg"/>
+              </appearance>
+              <IndexedFaceSet coordIndex='0 1 2 0 -1'>
+                  <Coordinate point='-4 0 0  4 0 0  0 7 0'></Coordinate>
+              </IndexedFaceSet>
+              </shape>
+           </transform>
+		   <!--telhado esquerdo-->
+           <transform translation="-1.75 2.5 -3" rotation='0 0 1 -0.523'>
+            <shape>
+                <appearance>  
+                    <material diffuseColor='1 1 1'/>
+                </appearance> 
+                <box size='0.1 8 6 '/>   
+            </shape>
+        </transform>
+		<!--telhado direito-->
+        <transform translation="2.25 2.5 -3" rotation='0 0 1 0.523'>
+            <shape>
+                <appearance>  
+                    <material diffuseColor='1 1 1'/>
+                </appearance> 
+                <box size='0.1 8 6'/>   
+            </shape>
+        </transform>
+        <!--chapa que vai em cima telhado esquerdo-->
+		<transform translation="-1.85 2.55 -3" rotation='0 0 1 -0.523'>
+            <shape> 
+               <appearance>  
+                 <material diffuseColor='0 0 0'/>
+               </appearance> 
+               <box size='0.1 8.30 6'/>   
+            </shape>
+           </transform>
+           <!--chapa que vai em cima telhado direito-->
+           <transform translation="2.35 2.55 -3" rotation='0 0 1 0.523'>
+            <shape> 
+               <appearance>  
+                 <material diffuseColor='0 0 0'/>
+               </appearance> 
+               <box size='0.1 8.30 6'/>   
+            </shape>
+           </transform>
+	   </scene> 
+	</x3d> 
+   </body> 
+</html> 

@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+<meta http-equiv="x-UA-Compatible" content="IE=edge">
+<meta charset="utf-8">
+    <title>Atividade 3 -- C</title>
+    <script type="text/javascript" src='https://www.x3dom.org/download/x3dom.js'></script>
+    <link rel="stylesheet" type="text/css" href="https://www.x3dom.org/download/x3dom.css">
+</head>
+<body>
+	<x3d width='800px' height='600px'>
+		<scene>
+			<!-- 3 Esferas com Cone -->
+			<transform translation='0 0 0'>
+				<shape>
+					<appearance>
+						<Material diffuseColor='0.243 0.070 0.070'></Material>
+					</appearance>
+					<Sphere radius="2" />
+				</shape>
+			</transform>
+			<transform translation='0.8 0 1.7'>
+				<shape>
+					<appearance>
+						<Material diffuseColor='0 0 0.803'></Material>
+					</appearance>
+					<Sphere radius="0.3" />
+				</shape>
+			</transform>
+			<transform translation='-0.8 0 1.7'>
+				<shape>
+					<appearance>
+						<Material diffuseColor='0 0 0.803'></Material>
+					</appearance>
+					<Sphere radius="0.3" />
+				</shape>
+			</transform>
+			<!-- 1 Cone-->
+			<transform translation='0 2.5 0'>
+				<shape>
+					<appearance>
+						<Material diffuseColor='0 1 0'></Material>
+					</appearance>
+					<Cone bottomRadius="2" height='4' />
+				</shape>
+			</transform>
+
+			<!-- 1 Cilindros-->
+			<transform translation='0 -1 1.1'>
+				<shape>
+					<appearance>
+						<Material diffuseColor='1 0.2 0.1'></Material>
+					</appearance>
+					<Cylinder radius='0.7'height="0.3" />
+				</shape>
+			</transform>
+		</scene>
+	</x3d>
+</body>
+</html>
